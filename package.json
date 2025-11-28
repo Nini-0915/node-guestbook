@@ -14,5 +14,13 @@
   "dependencies": {
     "express": "^5.1.0",
     "mysql2": "^3.15.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nini-0915/node-guestbook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nini-0915/node-guestbook/issues"
+  },
+  "homepage": "https://github.com/Nini-0915/node-guestbook#readme"
 }
