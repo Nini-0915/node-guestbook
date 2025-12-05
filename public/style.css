@@ -111,11 +111,39 @@ img {
 .photo{
    float: left;
    margin-right: 30px;
+   display: block;
 }
 div{
 	overflow: auto;
 }
 .more{
-    text-align: right;
+    text-align: left;
     clear: left;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #83bef5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #48bad6;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #2792b3;
+  color: white;
 }
