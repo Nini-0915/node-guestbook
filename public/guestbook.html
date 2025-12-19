@@ -6,7 +6,7 @@
     <title>Node.js 班級留言板</title>
     <script src="guestbook.js" defer></script>
     <style>
-        body { font-family: "微軟正黑體", sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        body { font-family: "微軟正黑體", sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem;padding-top: 56px }
        
         /* 留言列表樣式 */
         .message-item { border: 1px solid #ddd; margin-bottom: 10px; padding: 15px; border-radius: 8px; background-color: #f9f9f9; }
@@ -39,9 +39,47 @@
             font-size: 16px;
         }
         button:hover { background-color: #218838; }
+        /* 導覽列 */
+    .topnav {
+        background-color: #333;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .topnav a {
+        float: left;
+        color: #8ed2ff;
+        padding: 14px 18px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: 0.2s;
+    }
+
+    .topnav a:hover {
+        background-color: #4fc3f7;
+        color: #000;
+    }
+
+    .topnav a.active {
+        background-color: #0288d1;
+        color: white;
+    }
+
     </style>
 </head>
 <body>
+    <nav class="topnav">
+        <a class="active" href="index.html">首頁</a>
+        <a href="draw.html">繪圖小工具</a>
+        <a href="snake.html">貪吃蛇</a>
+        <a href="guess.html">猜數字遊戲</a>
+        <a href="guestbook.html">留言板</a>
+    </nav>
 
     <h1>📝 班級留言板</h1>
 
