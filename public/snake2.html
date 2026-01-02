@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>貪吃蛇遊戲</title>
+    <title>雙人 Snake Game</title>
     <style>
         body {
             background: #111;
@@ -15,37 +15,36 @@
             border: 2px solid white;
             margin-top: 10px;
         }
-        /* 導覽列 */
-    .topnav {
-        background-color: #333;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9999;
-    }
+            /* 導覽列 */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+        }
 
-    .topnav a {
-        float: left;
-        color: #8ed2ff;
-        padding: 14px 18px;
-        text-decoration: none;
-        font-size: 17px;
-        transition: 0.2s;
-    }
+        .topnav a {
+            float: left;
+            color: #8ed2ff;
+            padding: 14px 18px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.2s;
+        }
 
-    .topnav a:hover {
-        background-color: #4fc3f7;
-        color: #000;
-    }
+        .topnav a:hover {
+            background-color: #4fc3f7;
+            color: #000;
+        }
 
-    .topnav a.active {
-        background-color: #0288d1;
-        color: white;
-    }
-
+        .topnav a.active {
+            background-color: #0288d1;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -57,15 +56,10 @@
         <a href="guess.html">猜數字遊戲</a>
         <a href="guestbook.html">留言板</a>
     </nav>
-
-    <h1>Snake Game</h1>
+    <h1>🐍 雙人貪吃蛇</h1>
     <input type="button" value="Start" id="buttonStart">
     <br/>
     <canvas id="canvas" width="400" height="400"></canvas>
-
-    <!-- 引入外部 JavaScript -->
-    <script src="snake.js"></script>
+    <script src="snake2.js"></script>
 </body>
 </html>
-
-
